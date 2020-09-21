@@ -23,6 +23,7 @@ SOURCES += \
     operador.cpp \
     registro_cliente.cpp \
     registro_operador.cpp \
+    reservacion.cpp \
     socio.cpp \
     socio_cliente.cpp \
     tramitar_membresia.cpp \
@@ -42,6 +43,7 @@ HEADERS += \
     operador.h \
     registro_cliente.h \
     registro_operador.h \
+    reservacion.h \
     socio.h \
     socio_cliente.h \
     tramitar_membresia.h \
@@ -61,6 +63,7 @@ FORMS += \
     operador.ui \
     registro_cliente.ui \
     registro_operador.ui \
+    reservacion.ui \
     socio.ui \
     socio_cliente.ui \
     tramitar_membresia.ui \
