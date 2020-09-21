@@ -15,6 +15,7 @@ SOURCES += \
     admin.cpp \
     cobrar_estacionamiento.cpp \
     cuentas.cpp \
+    dar_salida_reservacion.cpp \
     eliminarcuentas.cpp \
     estatus_estacionamiento.cpp \
     inicio_de_sesion.cpp \
@@ -36,6 +37,7 @@ HEADERS += \
     admin.h \
     cobrar_estacionamiento.h \
     cuentas.h \
+    dar_salida_reservacion.h \
     eliminarcuentas.h \
     estatus_estacionamiento.h \
     inicio_de_sesion.h \
@@ -56,6 +58,7 @@ FORMS += \
     admin.ui \
     cobrar_estacionamiento.ui \
     cuentas.ui \
+    dar_salida_reservacion.ui \
     eliminarcuentas.ui \
     estatus_estacionamiento.ui \
     inicio_de_sesion.ui \
