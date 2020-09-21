@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>accesos_socio</class>
+ <widget class="QDialog" name="accesos_socio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>540</y>
+     <width>791</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #9fd5d1;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>731</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Imagenes.qrc">:/Imagenes/Imagenes/Icon_2_0.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Actualizar_tarifa">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Dar acceso a socio</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="IdSocio">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>120</y>
+      <width>299</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Times New Roman&quot;;
+background: transparent;
+border bottom: rgb(255, 255, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Ingresar usuario</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Buscar">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>120</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;</string>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="Reservaciones">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>170</y>
+      <width>411</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Times New Roman&quot;;
+border-bottom-color: rgb(94, 19, 255);
+background-color: #9BC499;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Folio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Horario inicio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hora fin</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cajon</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="Permitir_acceso">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>440</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;</string>
+    </property>
+    <property name="text">
+     <string>Permitir acceso</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="MatriculaDif">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Matricula diferente</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Matricula">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>380</y>
+      <width>241</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Times New Roman&quot;;
+background: transparent;
+border bottom: rgb(255, 255, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Ingresa Matricula</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnRegresar">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>490</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color:#DB7B65;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Regresar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Matricula_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>320</y>
+      <width>421</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

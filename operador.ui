@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>operador</class>
+ <widget class="QDialog" name="operador">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>634</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>681</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="Bienvenido">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Bienvenido </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Operador">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>50</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Operador</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Imagenes.qrc">:/Imagenes/Imagenes/Icon_2_0.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Eligeunaopcion">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Elige una operacion</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arealizar">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>190</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>a realizar:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CerrarSesion">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>280</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color:#DB7B65;</string>
+    </property>
+    <property name="text">
+     <string>Cerrar Sesión</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Cobrar">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>210</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;
+</string>
+    </property>
+    <property name="text">
+     <string>Cobrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Corte_de_caja">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>150</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #FDBB75;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Corte de caja</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RegistrodeVentas">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>90</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Dar acceso a cliente</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Estatus_estacionamiento">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #FDBB75;
+</string>
+    </property>
+    <property name="text">
+     <string>Estatus de estacionamiento</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>350</y>
+     <width>681</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #9fd5d1;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

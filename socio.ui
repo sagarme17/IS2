@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>socio</class>
+ <widget class="QDialog" name="socio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>350</y>
+     <width>681</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #9fd5d1;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>641</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Imagenes.qrc">:/Imagenes/Imagenes/Icon_2_0.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CerrarSesion">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>300</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color:#DB7B65;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Cerrar Sesión</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bienvenido">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Bienvenido </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cliente">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Cliente</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ReservaMnesual">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Reserva mensual</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Reservar">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Reseravar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Corte_de_caja">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>240</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #FDBB75;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Extender reservación</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EditarPerfil">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>120</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #FDBB75;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Editar perfil</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Eligeunaopcion">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Elige una operacion</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arealizar">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>190</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>a realizar:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

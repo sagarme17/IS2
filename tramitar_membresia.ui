@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tramitar_Membresia</class>
+ <widget class="QDialog" name="tramitar_Membresia">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">backgorund: white;</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>570</y>
+     <width>871</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #9fd5d1;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>711</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(255, 255, 255)</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="CVV_Tarjeta">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>360</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Times New Roman&quot;;
+background: transparent;
+border bottom: rgb(255, 255, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="maxLength">
+     <number>3</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>CVV</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bienvenido">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>441</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Tramita ya tu membresia</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Operador">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>mensual!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Imagenes.qrc">:/Imagenes/Imagenes/Icon_2_0.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bienvenido_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>430</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>empieza su membresia</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bienvenido_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>400</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Escoja la fecha en la que</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="fecha_Membresia">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>430</y>
+      <width>131</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #9fd5d1;
+selection-color: rgb(72, 72, 72);
+selection-background-color: transparent;
+gridline-color: rgb(0, 0, 0);
+font: 75 14pt &quot;Times New Roman&quot;;
+</string>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tramitar">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>510</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;</string>
+    </property>
+    <property name="text">
+     <string>TRAMITAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Cancelar">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>510</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;</string>
+    </property>
+    <property name="text">
+     <string>CANCELAR</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>360</y>
+      <width>100</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="accelerated">
+     <bool>false</bool>
+    </property>
+    <property name="keyboardTracking">
+     <bool>true</bool>
+    </property>
+    <property name="showGroupSeparator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="minimumDate">
+     <date>
+      <year>2020</year>
+      <month>9</month>
+      <day>14</day>
+     </date>
+    </property>
+    <property name="currentSection">
+     <enum>QDateTimeEdit::MonthSection</enum>
+    </property>
+    <property name="displayFormat">
+     <string>MM/yy</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>false</bool>
+    </property>
+    <property name="date">
+     <date>
+      <year>2020</year>
+      <month>9</month>
+      <day>14</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IdSocio">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Nombre">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>170</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Correo">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>220</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fecha de vencimiento:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NumeroTarjeta">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>270</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

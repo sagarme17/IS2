@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cuetas_operador</class>
+ <widget class="QDialog" name="cuetas_operador">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>861</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>540</y>
+     <width>871</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #9fd5d1;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>861</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Imagenes.qrc">:/Imagenes/Imagenes/Icon_2_0.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bienvenido">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>30</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;Segoe Print&quot;;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Cuentas </string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Opcion">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>120</y>
+      <width>231</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #9fd5d1;
+selection-color: rgb(72, 72, 72);
+selection-background-color: transparent;
+gridline-color: rgb(0, 0, 0);
+font: 75 14pt &quot;Times New Roman&quot;;
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Socios</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Operadores</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTableWidget" name="Socio">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>621</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Times New Roman&quot;;
+border-bottom-color: rgb(94, 19, 255);
+background-color: #9BC499;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID Socio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre(S)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Apellido pat</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Apellido mat</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Teléfono</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Correo</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="Operador">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>180</y>
+      <width>521</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Times New Roman&quot;;
+border-bottom-color: rgb(94, 19, 255);
+background-color: #9BC499;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID operador</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre(s)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Apellido pat</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Apellido mat</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Teléfono</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="Regresar">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>480</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color:#DB7B65;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Regresar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Actualizar">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>480</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt 75 &quot;Times New Roman&quot;;
+hover!pressed:border: 5px solid green;
+background-color: #9BC499;</string>
+    </property>
+    <property name="text">
+     <string>Actualizar</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
