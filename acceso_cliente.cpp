@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QDateTime>
 //Acceso Socio Sin Reservación
+//probando GIT
 Acceso_cliente_socio::Acceso_cliente_socio(QString IdOperador,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Acceso_cliente_socio)
