@@ -1,6 +1,7 @@
 #include "basededatos.h"
 #include <QtTest>
 #include<QDateTime>
+#include <QDate>
 baseDatos::baseDatos()
 {
     mDatabase = QSqlDatabase::addDatabase("QODBC","Connection");
@@ -199,6 +200,62 @@ bool baseDatos::Venta(QString matricula)
     if(Venta.next())
     {
         return true;
+    }else
+    {
+        return false;
+    }
+}
+
+bool baseDatos::Reservacion(QString fechaInicioString, QString fechaFinString, int idEstacionamiento , int idSocio)
+{
+    QDate fechaInicio, fechaFin;
+    fechaInicio.setDate(2020,9,26);
+
+    //QString fechaInicioString;
+    /*QString*/ fechaInicioString= fechaInicio.toString("yyyy/MM/dd");
+    //QString fechaFinString;
+     fechaFin.setDate(2020,9,26);
+    /*QString*/ fechaFinString=fechaFin.toString("yyyy/MM/dd");
+    //int idEstacionamiento=5, idSocio=100003;
+
+
+    QSqlQuery Reservacion(mDatabase);
+    Reservacion.prepare("Insert into reservación (Inicio,Final,IdEstacionamiento_Socio,IdSocio) values ('"+fechaInicioString+"','"+fechaFinString+"','"+QString::number(idEstacionamiento)+"','"+QString::number(idSocio)+"')");
+    Reservacion.exec();
+    qDebug()<<"AQUI VA LA FECHA"+fechaInicioString;
+    qDebug()<<"AQUI VA LA FECHA"+fechaFinString;
+    //if(Reservacion.exec("Insert into reservación (Inicio,Final,IdEstacionamiento_Socio,IdSocio) values ('"+fechaInicioString+"','"+fechaFinString+"','"+idEstacionamiento+"','"+idSocio+"')"))
+    if(Reservacion.next())
+    {
+        return false;
+            qDebug()<<"Reservacion exitosa";
+    }else
+    {
+        return true;
+    }
+
+}
+
+bool baseDatos::EntradaCliente(QString Estatus)//,int id)
+{
+   QSqlQuery Entrada(mDatabase);
+   Entrada.prepare("Update estacionamiento_cliente Set Estatus='"+Estatus+"' where estacionamiento_cliente.idEstacionamiento_Cliente=1");
+   if(Entrada.exec())
+   {
+       return true;
+   }else
+   {
+       return false;
+   }
+}
+bool baseDatos::VerVentasSemanales()
+{
+    QSqlQuery Ventas(mDatabase);
+    //Ventas.prepare("SELECT * FROM venta WHERE venta.FechaInicio > DATE_SUB(NOW(), INTERVAL 1 WEEK)");
+    if(Ventas.exec("SELECT * FROM venta WHERE venta.FechaInicio > DATE_SUB(NOW(), INTERVAL 1 WEEK)"))
+    {
+        return true;
+        //qDebug()<<"SELECT * FROM venta WHERE venta.FechaInicio > DATE_SUB(NOW(), INTERVAL 1 WEEK)";
     }else
     {
         return false;

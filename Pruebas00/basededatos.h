@@ -26,6 +26,10 @@ public:
     bool VerOperador(int id);
     bool VerMembresia(int id);
     bool Venta(QString matricula);
+    bool Reservacion(QString,QString,int,int);
+    bool EntradaCliente(QString);//,int);
+    bool VerVentasSemanales();
+
 
 };
 

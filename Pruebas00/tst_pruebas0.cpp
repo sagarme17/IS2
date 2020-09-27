@@ -33,7 +33,9 @@ private slots:
     void VerOperador();
     void Membresia();
     void Venta();
-
+    void Reservacion();
+    void EntradaCliente();
+    void VentasVistas();
 
 };
 
@@ -112,7 +114,18 @@ void Pruebas0::Venta()
 {
     QCOMPARE(conexion->Venta("SDFW3453"),true);
 }
-
+void Pruebas0::Reservacion()
+{
+    QCOMPARE(conexion->Reservacion("2020-09-26","2020-09-26",3,100004),true);
+}
+void Pruebas0::EntradaCliente()
+{
+    QCOMPARE(conexion->EntradaCliente("Ocupado"),true );
+}
+void Pruebas0::VentasVistas()
+{
+    QCOMPARE(conexion->VerVentasSemanales(),true);
+}
 QTEST_APPLESS_MAIN(Pruebas0)
 
 #include "tst_pruebas0.moc"
