@@ -1,2 +1,2 @@
 # IS2
-Proyecto Equipo 4
+Proyecto Equipo Núm.4
