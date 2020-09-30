@@ -204,3 +204,112 @@ bool baseDatos::Venta(QString matricula)
         return false;
     }
 }
+
+/*-----Iteración 4-----*/
+void baseDatos::EliminarOperador(int idOp){
+     QSqlQuery borrarOp(mDatabase),usOp(mDatabase);
+
+     QString idRe= QString::number(idOp);
+
+         usOp.prepare("select IdOperador from operador inner join usuario where IdOperador='"+idRe+"'");
+         usOp.exec();
+         if(usOp.next())
+         {
+             QVERIFY(borrarOp.exec("delete from usuario where idUsuario="+idRe));
+         }else
+         {
+             qDebug() << "El operador no se encontro";
+         }
+}
+void baseDatos::EliminarSocio(int idSo){
+     QSqlQuery borrarSo(mDatabase),usSo(mDatabase);
+
+     QString idRe= QString::number(idSo);
+
+         usSo.prepare("select IdSocio from socio inner join usuario where IdSocio='"+idRe+"'");
+         usSo.exec();
+         if(usSo.next())
+         {
+
+             QVERIFY(borrarSo.exec("delete from usuario where idUsuario="+idRe));
+             qDebug() << "El cliente fue eliminado exitosamente!!";
+         }else
+         {
+             qDebug() << "El cliente no se encontro";
+         }
+}
+
+void baseDatos::ActualizarSocio(int id,QString contraseniaN,QString telefonoN,QString correoN,QString numtarjetaN,QString titularN,QString matriculaN){
+    QSqlQuery actuSocio(mDatabase);
+
+    QString idS=QString::number(id);
+
+   if(contraseniaN!="")
+    {
+        actuSocio.clear();
+        QVERIFY(actuSocio.prepare("Update usuario set Contraseña ='"+contraseniaN+"' where idUsuario='"+idS+"'"));
+        actuSocio.exec();
+        actuSocio.next();
+        qDebug()<<"Contraseña modificada!!";
+    }
+   if(telefonoN!="")
+   {
+       actuSocio.clear();
+       QVERIFY(actuSocio.prepare("Update usuario set Telefono ='"+telefonoN+"' where idUsuario='"+idS+"'"));
+       actuSocio.exec();
+       actuSocio.next();
+       qDebug()<<"Telefono modificado!!";
+   }
+   if(correoN!="")
+   {
+      actuSocio.clear();
+      QVERIFY( actuSocio.prepare("Update Socio set Correo ='"+correoN+"' where IdSocio='"+idS+"'"));
+       actuSocio.exec();
+       actuSocio.next();
+       qDebug()<<"Correo modificado!!";
+   }
+   if(numtarjetaN!="")
+   {
+       actuSocio.clear();
+       QVERIFY(actuSocio.prepare("Update Socio set NumTarjeta ='"+numtarjetaN+"' where IdSocio='"+idS+"'"));
+       actuSocio.exec();
+       actuSocio.next();
+       qDebug()<<"Numero de tarjeta modificada!!";
+   }
+   if(titularN!="")
+   {
+       actuSocio.clear();
+       QVERIFY(actuSocio.prepare("Update Socio set TitularTarjeta ='"+titularN+"' where IdSocio='"+idS+"'"));
+       actuSocio.exec();
+       actuSocio.next();
+       qDebug()<<"Titular de la tarjeta modificada!!";
+   }
+   if(matriculaN!="")
+   {
+
+      actuSocio.clear();
+      actuSocio.prepare("Delete from matricula_registrada where IdSocio='"+idS+"'");
+      actuSocio.exec();
+      actuSocio.next();
+      actuSocio.clear();
+      actuSocio.prepare("Select Matricula from vehiculo where Matricula='"+matriculaN+"'");
+      actuSocio.exec();
+      if(actuSocio.next()){
+         actuSocio.clear();
+         actuSocio.prepare("Insert Into Matricula_Registrada (IdSocio,Matricula) values('"+idS+"','"+matriculaN+"')");
+         actuSocio.exec();
+         actuSocio.next();
+        }
+         else{
+              actuSocio.clear();
+              actuSocio.prepare("Insert Into Vehiculo(Matricula) values('"+matriculaN+"')");
+              actuSocio.exec();
+              actuSocio.next();
+              actuSocio.clear();
+              QVERIFY(actuSocio.prepare("Insert Into Matricula_Registrada (IdSocio,Matricula) values('"+idS+"','"+matriculaN+"')"));
+              actuSocio.exec();
+              actuSocio.next();
+              qDebug()<<"Matricula modificada!!";
+             }
+   }
+}

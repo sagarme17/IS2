@@ -33,6 +33,9 @@ private slots:
     void VerOperador();
     void Membresia();
     void Venta();
+    void EliminarOp();
+    void EliminarSo();
+    void ActualizarOperador_p();
 
 
 };
@@ -111,6 +114,18 @@ void Pruebas0::Membresia()
 void Pruebas0::Venta()
 {
     QCOMPARE(conexion->Venta("SDFW3453"),true);
+}
+void Pruebas0::EliminarOp()
+{
+    conexion->EliminarOperador(10025);
+}
+void Pruebas0::EliminarSo()
+{
+    conexion->EliminarSocio(100011);
+}
+void Pruebas0::ActualizarOperador_p()
+{
+    conexion->ActualizarSocio(100003,"","2221594578","","21345678912345","MArtinPerez","ABCD321");
 }
 
 QTEST_APPLESS_MAIN(Pruebas0)
